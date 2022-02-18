@@ -1,0 +1,4 @@
+com\example\exam\meteo\Weather.class
+com\example\exam\controller\WeatherController$Swagger2DemoRestController.class
+com\example\exam\controller\WeatherController.class
+com\example\exam\ExamApplication.class
