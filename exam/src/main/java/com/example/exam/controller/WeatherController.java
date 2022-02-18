@@ -17,6 +17,8 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
+@Api(value = "Swagger2UiConfiguration", description = "REST Apis related to weather Entity!!!!")
+
 @RestController
 public class WeatherController {
         List<Weather> weathers = new ArrayList<Weather>();
@@ -39,22 +41,25 @@ public class WeatherController {
             return weathers;
         }
 
-        @ApiOperation(value = "Get specific Student in the System ", response = Weather.class, tags = "getVille")
+        @ApiOperation(value = "Get specific Ville in the System ", response = Weather.class, tags = "getVille")
         @RequestMapping(value = "/getWeather/{ville}")
         public Weather getVille(@PathVariable(value = "ville") String ville) {
             return weathers.stream().filter(x -> x.getVille().equalsIgnoreCase(ville)).collect(Collectors.toList()).get(0);
         }
 
+        @ApiOperation(value = "Get specific zip_code in the System ", response = Weather.class, tags = "getZip_code")
         @RequestMapping(value = "/getWeather/{zip_code}")
         public List<Weather> getZip_code(@PathVariable(value = "zip_code") String zip_code) {
             return weathers.stream().filter(x -> x.getZip_code().equalsIgnoreCase(zip_code)).collect(Collectors.toList());
         }
 
+        @ApiOperation(value = "Get specific pays in the System ", response = Weather.class, tags = "getPays")
         @RequestMapping(value = "/getWeather/{pays}")
         public List<Weather> getPays(@PathVariable(value = "pays") String pays) {
             return weathers.stream().filter(x -> x.getZip_code().equalsIgnoreCase(pays)).collect(Collectors.toList());
         }
 
+        @ApiOperation(value = "Get specific meteo in the System ", response = Weather.class, tags = "getMeteo")
         @RequestMapping(value = "/getWeather/{meteo}")
         public List<Weather> getMeteo(@PathVariable(value = "meteo") String meteo) {
             return weathers.stream().filter(x -> x.getZip_code().equalsIgnoreCase(meteo)).collect(Collectors.toList());

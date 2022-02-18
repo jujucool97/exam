@@ -1,9 +1,15 @@
 package com.example.exam.meteo;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class Weather {
+    @ApiModelProperty(notes = "Ville",name="ville",required=true,value="test ville")
     private String ville;
+    @ApiModelProperty(notes = "zip_code",name="zip_code",required=true,value="test zip_code")
     private String zip_code;
+    @ApiModelProperty(notes = "pays",name="pays",required=true,value="test pays")
     private String pays;
+    @ApiModelProperty(notes = "meteo",name="meteo",required=true,value="test meteo")
     private String meteo;
 
     public String getVille() {
