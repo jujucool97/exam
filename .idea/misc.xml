@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/exam/pom.xml" />
+        <option value="$PROJECT_DIR$/exam/hystrix/spring-hystrix-school-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/exam/exam.iml" filepath="$PROJECT_DIR$/exam/exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exam/hystrix/spring-hystrix-school-service/spring-hystrix-school-service.iml" filepath="$PROJECT_DIR$/exam/hystrix/spring-hystrix-school-service/spring-hystrix-school-service.iml" />
     </modules>
   </component>
 </project>
